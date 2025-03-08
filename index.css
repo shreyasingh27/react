@@ -1,3 +1,104 @@
-#heading {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #ebebeb;
+  padding: 15px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 60px;
+}
+.nav-items > ul {
+  display: flex;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+}
+.body {
+  padding: 15px;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+.search {
+  padding: 10px;
+}
+.res-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  width: 100%;
+}
+.res-card {
+  flex: calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  width: calc(25% - 15px);
+  min-height: 300px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-flow: column;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+.res-card:hover {
+  box-shadow: 0px 0px 10px #ccc;
+  cursor: pointer;
+}
+.res-card h3,
+.res-card h4,
+.res-card h5,
+.res-card p {
+  margin: 0px;
+  font-weight: normal;
+}
+.res-logo img {
+  height: 300px;
+  object-fit: cover;
+}
+.res-card-info {
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+.res-card-info h3 {
+  font-weight: 500;
+}
+.res-card-info p {
+  font-size: 12px;
+}
+.filter-btn {
+  border-radius: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(2, 6, 12, 0.15);
+  padding: 8px 12px;
+  width: auto;
+  box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
