@@ -12,4 +12,9 @@
 - -links
 - -address
 - -contact info
+
+---
+
+Must enable CORS chrome extension
+
 - \*/
