@@ -11,9 +11,12 @@ const Shimmer = (props) => {
           backgroundColor: "#f0f0f0",
         }}
       ></button>
-      <div className="shimmer-container">
+      <div className="shimmer-container flex">
         {arr.map((_, index) => (
-          <div key={index} className="shimmer-card"></div>
+          <div
+            key={index}
+            className="shimmer-card res-card flex-1/5 rounded-b-sm bg-gray-100 shadow mb-4"
+          ></div>
         ))}
       </div>
     </>
